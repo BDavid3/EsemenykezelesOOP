@@ -15,19 +15,19 @@ namespace EsemenykezelesOOP
 		{
 			randomEvents = new List<Event>
 			{
-				new Event("Kivandorlas", 60),
-				new Event("Inflacio", 30),
-				new Event("Gazdasagi valsag", 45),
-				new Event("Politikai valtozas", 20),
-				new Event("Termeszeti katasztrofa", 50)
+				new Event("Emigration", 60),
+				new Event("Inflation", 30),
+				new Event("Economic Change", 45),
+				new Event("Political Change", 20),
+				new Event("Natural Disaster", 52)
 			};
 			annualEvents = new List<Event>
 			{
-				new Event("Karacsony", 120),
-				new Event("Uj ev", 90),
+				new Event("Christmas", 120),
+				new Event("New Year", 90),
 				new Event("Hallowen", 60),
-				new Event("Valentin nap", 30),
-				new Event("Nemzeti unnep", 45)
+				new Event("Valentines Day", 30),
+				new Event("National Days", 45)
 			};
 		}
 
