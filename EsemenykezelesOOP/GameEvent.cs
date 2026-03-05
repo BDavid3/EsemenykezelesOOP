@@ -15,13 +15,13 @@ namespace EsemenykezelesOOP
         {
             Name = name;
             Duration = duration;
-            _random = new Random();
+            random = new Random();
         }
 
         // The private variables are created automatically by the properties, so we don't need to declare them separately.
         public string Name { get; protected set; }
         public int Duration { get; set; }
-        protected Random _random;
+        protected Random random;
 
 
         // The abstract methods does not have a body, but they must have these properties and methods in the derived classes.

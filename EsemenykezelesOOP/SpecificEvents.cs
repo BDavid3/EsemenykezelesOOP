@@ -14,32 +14,36 @@ namespace EsemenykezelesOOP
         {
 
             // Constructor 
-            public PowerOutage(int duration) : base("PowerOutage", duration) { }
+            public PowerOutage() : base("PowerOutage", 5) { }
           
             // Must have methods
             public override void ApplyEffect()
             {
                 Console.WriteLine("$The PowerOutage has started!");
+                // THE EFFECT 
             }
             public override void RemoveEffect()
             {
                 Console.WriteLine("$The PowerOutage has ended!");
+                // THE END OF THE EFFECT
             }
 		}
         public class EconomicCrisis : GameEvent
         {
 
             // Constructor 
-            public EconomicCrisis(int duration) : base("EconomicCrisis", duration) { }
+            public EconomicCrisis() : base("EconomicCrisis", 5) { }
 
             // Must have methods
             public override void ApplyEffect()
             {
                 Console.WriteLine("$The EconomicCrisis has started!");
+                // THE EFFECT 
             }
             public override void RemoveEffect()
             {
                 Console.WriteLine("$The EconomicCrisis has ended!");
+                // THE END OF THE EFFECT
             }
         }
 
