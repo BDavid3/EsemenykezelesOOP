@@ -23,7 +23,7 @@ namespace EsemenykezelesOOP
         public void Tick()
         {
             // backward removing
-            for (int i = activeEvents.Count; i >= 0; i--)
+            for (int i = activeEvents.Count-1; i >= 0; i--)
             {
                 activeEvents[i].Duration--;
 

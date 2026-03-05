@@ -19,12 +19,12 @@ namespace EsemenykezelesOOP
             // Must have methods
             public override void ApplyEffect()
             {
-                Console.WriteLine("$The PowerOutage has started!");
+                Console.WriteLine("The PowerOutage has started!");
                 // THE EFFECT 
             }
             public override void RemoveEffect()
             {
-                Console.WriteLine("$The PowerOutage has ended!");
+                Console.WriteLine("The PowerOutage has ended!");
                 // THE END OF THE EFFECT
             }
 		}
@@ -37,12 +37,12 @@ namespace EsemenykezelesOOP
             // Must have methods
             public override void ApplyEffect()
             {
-                Console.WriteLine("$The EconomicCrisis has started!");
+                Console.WriteLine("The EconomicCrisis has started!");
                 // THE EFFECT 
             }
             public override void RemoveEffect()
             {
-                Console.WriteLine("$The EconomicCrisis has ended!");
+                Console.WriteLine("The EconomicCrisis has ended!");
                 // THE END OF THE EFFECT
             }
         }
