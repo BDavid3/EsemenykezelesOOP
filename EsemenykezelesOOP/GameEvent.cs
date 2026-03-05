@@ -25,8 +25,8 @@ namespace EsemenykezelesOOP
 
 
         // The abstract methods does not have a body, but they must have these properties and methods in the derived classes.
-        public abstract void ApplyEffect();
-        public abstract void RemoveEffect();
+        public abstract void ApplyEffect(); // Start of the event, apply the effect to the game.
+        public abstract void RemoveEffect(); // End of the event, remove the effect from the game.
 
     }
 }
