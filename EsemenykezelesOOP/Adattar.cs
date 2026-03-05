@@ -8,31 +8,31 @@ namespace EsemenykezelesOOP
 {
 	internal class Adattar
 	{
-		private List<Event> randomEvents; // random
-		private List<Event> annualEvents; // ünnep 
+		private List<SpecificEvents> randomEvents; // random
+		private List<SpecificEvents> annualEvents; // ünnep 
 
 		public Adattar()
 		{
-			randomEvents = new List<Event>
+			randomEvents = new List<SpecificEvents>
 			{
-				new Event("Emigration", 60),
-				new Event("Inflation", 30),
-				new Event("Economic Change", 45),
-				new Event("Political Change", 20),
-				new Event("Natural Disaster", 52)
+				new SpecificEvents("Emigration", 60),
+				new SpecificEvents("Inflation", 30),
+				new SpecificEvents("Economic Change", 45),
+				new SpecificEvents("Political Change", 20),
+				new SpecificEvents("Natural Disaster", 52)
 			};
-			annualEvents = new List<Event>
+			annualEvents = new List<SpecificEvents>
 			{
-				new Event("Christmas", 120),
-				new Event("New Year", 90),
-				new Event("Hallowen", 60),
-				new Event("Valentines Day", 30),
-				new Event("National Days", 45)
+				new SpecificEvents("Christmas", 120),
+				new SpecificEvents("New Year", 90),
+				new SpecificEvents("Hallowen", 60),
+				new SpecificEvents("Valentines Day", 30),
+				new SpecificEvents("National Days", 45)
 			};
 		}
 
-		internal List<Event> RandomEvents { get => randomEvents; set => randomEvents = value; }
-		internal List<Event> AnnualEvents { get => annualEvents; set => annualEvents = value; }
+		internal List<SpecificEvents> RandomEvents { get => randomEvents; set => randomEvents = value; }
+		internal List<SpecificEvents> AnnualEvents { get => annualEvents; set => annualEvents = value; }
 
 
 	}
