@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EsemenykezelesOOP
 {
-	internal class BuildingEvents: Esemenyek
+	internal class BuildingEvents: Event
 	{
 		private int durability;
 		private int occupancy;
