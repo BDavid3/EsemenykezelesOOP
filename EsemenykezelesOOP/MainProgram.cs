@@ -7,8 +7,10 @@ namespace EsemenykezelesOOP
     {
         static void Main(string[] args)
         {
-			
-        }
+			EventManager eventManager = new EventManager();
+            eventManager.StartEvent(new BuildingEvents("teszname",1,100,50));
+
+		}
 
     }
 }

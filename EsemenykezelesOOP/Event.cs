@@ -18,6 +18,7 @@ namespace EsemenykezelesOOP
 			this.duration = duration;;
 		}
 
+
 		// Effect of the Event
 		public abstract void ApplyEffect();
 		public abstract void RemoveEffect();
