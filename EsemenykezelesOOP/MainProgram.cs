@@ -7,8 +7,7 @@ namespace EsemenykezelesOOP
     {
         static void Main(string[] args)
         {
-			BuildingEvents b1 = new BuildingEvents("Áramszünet", 10, "ASDFGJ", 100, 50);
-			Console.WriteLine(b1);
+			
         }
 
     }

@@ -6,20 +6,30 @@ using System.Threading.Tasks;
 
 namespace EsemenykezelesOOP
 {
-	internal class BuildingEvents: Event
+	internal class BuildingEvents : Event
 	{
 		private int durability;
 		private int occupancy;
 
-		protected int Durability { get => durability; set => durability = value; }
-		protected int Occupancy { get => occupancy; set => occupancy = value; }
-
-		public BuildingEvents(string name, int duration, string effect, int durabilty, int occupancy) : base(name, duration, effect)
+		// Constructor
+		public BuildingEvents(string name, int duration, int durabilty, int occupancy) : base(name, duration)
 		{
 			this.durability = durabilty;
 			this.occupancy = occupancy;
 		}
 
+		// The effect of the Event
+		public override void ApplyEffect()
+		{
+			Console.WriteLine("Applied effect.");
+		}
+
+		public override void RemoveEffect()
+		{
+			Console.WriteLine("Removed effect.");
+		}
+
+		// To string method
 		public override string ToString()
 		{
 			return base.ToString() + $"{this.durability} {this.occupancy}";
