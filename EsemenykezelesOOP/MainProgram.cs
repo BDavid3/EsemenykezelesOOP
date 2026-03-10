@@ -8,9 +8,11 @@ namespace EsemenykezelesOOP
         static void Main(string[] args)
         {
 			EventManager eventManager = new EventManager();
-            NPCEvents newNPC = new NPCEvents("Tamás",31,100,"Islam",80,true);
-            eventManager.StartEvent(newNPC);
-
+            Database database = new Database();
+            NPCEvents newNPC = new NPCEvents("Tamás",31,0,"Islam",80,true);
+            database.NPCAdd(newNPC);
+            database.Kiiratas();
+           
            
 		}
 

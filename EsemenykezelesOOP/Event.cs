@@ -21,6 +21,7 @@ namespace EsemenykezelesOOP
 
 
 
+
 		// Effect of the Event
 		public abstract void ApplyEffect();
 		public abstract void RemoveEffect();

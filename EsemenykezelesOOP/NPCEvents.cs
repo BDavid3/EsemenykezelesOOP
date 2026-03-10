@@ -13,8 +13,10 @@ namespace EsemenykezelesOOP
 		private int happiness; // On a scale of 0-100
 		private bool status; // Dead or Not
 
+
+
 		// Constructor
-        public NPCEvents(string name, int duration, int health, string religon, int happiness, bool status) : base(name, duration)
+		public NPCEvents(string name, int duration, int health, string religon, int happiness, bool status) : base(name, duration)
         {
 			this.health = health;
 			this.religon = religon;
@@ -25,7 +27,6 @@ namespace EsemenykezelesOOP
         public override void ApplyEffect()
 		{
 			Deaths();
-			Console.WriteLine("Applied effect: Death");
 		}
 
         public override void RemoveEffect()
@@ -36,13 +37,17 @@ namespace EsemenykezelesOOP
 
 		public void Deaths()
 		{
-			if (this.health == 0)
+			if (this.health == 0 && this.happiness <= 10)
 			{
 				status = false;
 				Console.WriteLine($"{this.name} Died!");
 			}
 
+		}
 
+		public override string ToString()
+		{
+			return base.ToString() + $" {this.health} {this.religon} {this.happiness} {this.status}";
 		}
 
     }
