@@ -8,7 +8,7 @@ namespace EsemenykezelesOOP
 {
 	internal abstract class Event
 	{
-		private string name;
+		protected string name;
 		private int duration;
 
 		// Constructor
@@ -17,6 +17,8 @@ namespace EsemenykezelesOOP
 			this.name = name;
 			this.duration = duration;;
 		}
+
+
 
 
 		// Effect of the Event
