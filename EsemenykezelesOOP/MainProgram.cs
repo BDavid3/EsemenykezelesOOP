@@ -13,7 +13,8 @@ namespace EsemenykezelesOOP
             database.NPCAdd(newNPC);
             database.Kiiratas();
            
-           
+           newNPC.ApplyEffect();
+            
 		}
 
     }

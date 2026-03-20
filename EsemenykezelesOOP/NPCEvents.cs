@@ -37,7 +37,7 @@ namespace EsemenykezelesOOP
 
 		public void Deaths()
 		{
-			if (this.health == 0 && this.happiness <= 10)
+			if (this.health == 0 || this.happiness <= 10)
 			{
 				status = false;
 				Console.WriteLine($"{this.name} Died!");
